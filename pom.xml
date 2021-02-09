@@ -6,6 +6,7 @@
     <artifactId>demo</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>hello-world</name>
+    <packaging>jar</packaging>
     <description>Demo project for jenkins packing...</description>
 
     <properties>
