@@ -21,5 +21,8 @@ steps:
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'package'
     
-- publish: $(System.DefaultWorkingDirectory)/bin/WebApp
-  artifact: WebApp
+- task: PublishPipelineArtifact@1
+  inputs:
+    targetPath: '$(Pipeline.Workspace)'
+    artifact: 'hello-world'
+    publishLocation: 'pipeline'
